@@ -1,0 +1,63 @@
+/* ====================================
+   Fonte personalizada da Google Fonts
+==================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Centraliza conteúdo com flexbox */
+.centralizar {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+}
+
+
+.pop{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    background-color:  rgb(248, 231, 213);
+}
+
+/* Titulo */
+.pop h1{
+
+}
+
+.pop img{
+    width: 79%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.pop p{
+    white-space: pre-line;
+}
+
+
+/* CSS DO SLIDER */
+
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.slider button{
+    background-color: purple;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+}
