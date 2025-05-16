@@ -127,20 +127,35 @@ body {
 }
 
 
-/* ====================================
-            Banner principal
-==================================== */
-.banner {
-    height: 62%;
-
-    width: 100%;
-
-    /* Ajusta imagem sem distorção */
-    object-fit: cover;
-
-    display: flex;
+.slider {
+  width: 100%;
+  max-height: 60%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
 }
 
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide-animation 9s infinite;
+
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: flex;
+}
+
+/* Animação automática */
+@keyframes slide-animation {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
 
 /* ====================================
    Sobre Nós
