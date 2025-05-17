@@ -83,19 +83,19 @@
 
     <main>
         <!-- Título da seção -->
-        <section class="secao-produtos" style="text-align: center; margin: 40px auto;">
-        
+        <section class="secao-produtos" style="text-align: center; margin: 10px ;"> 
+                    
             <h1 style="font-size: 2em; display: inline-flex; align-items: center;">
                 Nossos Produtos
             </h1>
         
             <!-- Data atual exibida à direita -->
-        
-            <script>
+            <p class="relogio">
+                <script>
 
-                document.write(dia[data.getDay()] + ', ' + data.getDate() + ' de ' + mes[data.getMonth()] + ' de ' + data.getFullYear());
+                    document.write(dia[data.getDay()] + ', ' + data.getDate() + ' de ' + mes[data.getMonth()] + ' de ' + data.getFullYear());
 
-            </script>
+                </script>
         
             </p>
         
@@ -124,12 +124,12 @@
 
                 descricaoClassico = "Dois smash burgers de 120g no pão de brioche, queijo cheddar, maionese caseira, cebola caramelizada";
 
-                slider = ['img/aborgue2.png', 'img/aborgue3.png'];
+                slider1 = ['img/aborgue1.png', 'img/aborgue6.png'];
 
             </script>
 
             <!-- Dados do Container -->
-            <div class="card" onclick="abrirDetalhes('Clássico Chico Smash Burger',slider,descricaoClassico)">
+            <div class="card" onclick="abrirDetalhes('Clássico Chico Smash Burger',slider1,descricaoClassico)">
 
                 <img src="img/aborgue1.png" class="img-card">
 
@@ -149,17 +149,19 @@
 
                 descricaoChicosBacon = "Um burger alto de 220g Angus no pão de brioche, queijo gruyere, molho agridoce picante e bacon crispy.";
 
+                slider2 = ['img/aborgue2.png', 'img/aborgue6.png'];
+
+
             </script>
 
             <!-- Dados do Container -->
-            <div class="card" onclick="abrirDetalhes('Chicos Bacon Churrasco','img/aborgue2.png',descricaoChicosBacon)">
+            <div class="card" onclick="abrirDetalhes('Chicos Bacon Churrasco',slider2,descricaoChicosBacon)">
 
                 <img src="img/aborgue2.png" class="img-card">
 
                 <h2>Chico's Bacon Churrasco</h2>
 
-                <p>Um burger alto de 220g Angus no pão de brioche, queijo gruyere, molho agridoce picante e bacon
-                    crispy.</p>
+                <p>Um burger alto de 220g Angus no pão de brioche, queijo gruyere, molho agridoce picante e bacon crispy.</p>
 
                 <span class="preco">R$ 39,90</span>
 
@@ -172,10 +174,13 @@
 
                 descricaoSalada = "Um burger alto de 190g Angus no pão de brioche, queijo Prato, maionese picante e Mix de saladas.";
 
+                slider3 = ['img/aborgue3.png', 'img/aborgue6.png'];
+
+
             </script>
 
             <!-- Dados do Container -->
-            <div class="card" onclick="abrirDetalhes('Chicos Salada Master','img/aborgue3.png',descricaoSalada)">
+            <div class="card" onclick="abrirDetalhes('Chicos Salada Master',slider3,descricaoSalada)">
                 <img src="img/aborgue3.png" class="img-card">
                 <h2>Chico's Salada Master</h2>
                 <p>Um burger alto de 190g Angus no pão de brioche, queijo Prato, maionese picante e Mix de saladas.</p>
@@ -189,10 +194,13 @@
 
                 descricaoAustraliano = "Dois smash burgers de 120g no pão australiano, creme de queijo cheddar, bacon crispy.";
 
+                slider4 = ['img/aborgue4.png', 'img/aborgue6.png'];
+
+
             </script>
 
             <!-- Dados do Container -->
-            <div class="card" onclick="abrirDetalhes('Chicos Australiano','img/aborgue4.png',descricaoAustraliano)">
+            <div class="card" onclick="abrirDetalhes('Chicos Australiano',slider4,descricaoAustraliano)">
 
                 <img src="img/aborgue4.png" class="img-card">
 
@@ -211,10 +219,13 @@
 
                 descricaoFrango = "Um peito de frango empanado de 200g no pão de francês redondo, queijo Prato, maionese acida e Mix de saladas.";
 
+                slider5 = ['img/aborgue5.png', 'img/aborgue6.png'];
+
+
             </script>
 
             <!-- Dados do Container -->
-            <div class="card" onclick="abrirDetalhes('Chicos Frango Brabo','img/aborgue5.png',descricaoFrango)">
+            <div class="card" onclick="abrirDetalhes('Chicos Frango Brabo',slider5,descricaoFrango)">
 
                 <img src="img/aborgue5.png" class="img-card">
 
@@ -234,10 +245,13 @@
 
                 descricaoPexe = "Um filé de peixe empanado de 150g no pão de brioche, queijo Prato, maionese Tártaro e Mix de saladas.";
 
+                slider6 = ['img/aborgue6.png', 'img/aborgue1.png'];
+
+
             </script>
 
             <!-- Dados do Container -->
-            <div class="card" onclick="abrirDetalhes('Chicos Master Fish','img/aborgue6.png',descricaoPexe)">
+            <div class="card" onclick="abrirDetalhes('Chicos Master Fish',slider6,descricaoPexe)">
 
                 <img src="img/aborgue6.png" class="img-card">
 
@@ -257,10 +271,13 @@
 
                 descricaoCebola = "Porção de anéis de cebola empanada com maionese de alho.";
 
+                slider7 = ['img/cebola.png', 'img/aborgue3.png'];
+
+
             </script>
 
             <!-- Dados do Container -->
-            <div class="card" onclick="abrirDetalhes('Chicos Cebola Cabulosa','img/cebola.png',descricaoCebola)">
+            <div class="card" onclick="abrirDetalhes('Chicos Cebola Cabulosa',slider7,descricaoCebola)">
 
                 <img src="img/cebola.png" class="img-card">
 
@@ -279,10 +296,13 @@
 
                 descricaoBatata = "Porção de batatas com cheddar e bacon temperada com o segredo da casa.";
 
+                slider8 = ['img/batata.png', 'img/aborgue3.png'];
+
+
             </script>
 
             <!-- Dados do Container -->
-            <div class="card" onclick="abrirDetalhes('Chicos Batata Bolada','img/batata.png',descricaoBatata)">
+            <div class="card" onclick="abrirDetalhes('Chicos Batata Bolada',slider8,descricaoBatata)">
 
                 <img src="img/batata.png" class="img-card">
 
@@ -301,11 +321,14 @@
 
                 descricaoTapioca = "Porção de dadinhos de tapioca fritos com geleia de pimenta.";
 
+                slider9 = ['img/dadosdetapioca.png', 'img/aborgue3.png'];
+
+
             </script>
 
             <!-- Dados do Container -->
             <div class="card"
-                onclick="abrirDetalhes('Chicos Dadinhos Maldosos','img/dadosdetapioca.png',descricaoTapioca)">
+                onclick="abrirDetalhes('Chicos Dadinhos Maldosos',slider9,descricaoTapioca)">
 
                 <img src="img/dadosdetapioca.png" class="img-card">
 
