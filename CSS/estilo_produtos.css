@@ -273,12 +273,15 @@ body {
 /* ====================================
                 ICONES
 ==================================== */
+/* Ícones de redes sociais */
 i {
-
   color: white;
-
 }
 
+footer a {
+  font-style: none;
+  color: white;
+}
 
 /* ====================================
                 FOOTER
