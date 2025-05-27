@@ -305,34 +305,38 @@ body {
             Rodapé (footer)
 ==================================== */
 
-/* Estilo geral do rodapé com imagem de fundo */
 footer {
-    background: url("../img/banner.png") no-repeat center center;
 
+    /* Imagem de fundo */
+    background: url("../img/banner.png");
+  
+    /* Cor escura por cima */
     background-color: rgba(0, 0, 0, 0.3);
-
+  
+    /* Mescla escurecendo */
     background-blend-mode: darken;
-
-    background-size: cover;
-
-    padding: 20px 0;
-}
-
-
-/* Texto do rodapé */
-footer p {
+  
+  }
+  
+  
+  /* Texto do rodapé */
+  footer p {
+  
     font-weight: bold;
-
+  
     color: #ffffff;
-
+  
     display: inline-block;
-
+  
     text-align: right;
-
+  
     width: 99%;
-
+  
     font-size: 19px;
-}
+  
+    margin-bottom: 0;
+  
+  }
 
 
 /* Logo no rodapé */

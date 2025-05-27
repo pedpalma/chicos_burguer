@@ -156,9 +156,10 @@ fieldset{
 	margin: 20px 0;
 }
 .enviar{
-	width: 40%;
+    margin-left: 24%;
+	width: 27%;
 	padding: 15px 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 	background: #9a5833;
 	color: white;
 	font-weight: bold;
@@ -169,7 +170,7 @@ fieldset{
 }
 .enviar:hover{
 	background: #9a5833;
-	transform: scale(1.2);
+	transform: scale(1.06);
 }
 
 /*Div do retorno do formulário*/
@@ -179,6 +180,12 @@ fieldset{
 }
 .divRetorno p{
     font-size: 24px;
+}
+
+.inputs {
+    border-radius: 5.5px;
+    border: none;
+    padding: 10px;
 }
 
 /*============================
