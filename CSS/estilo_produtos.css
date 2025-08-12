@@ -43,6 +43,9 @@ body {
   /* Define cor de fundo translúcida */
   background: #a19286bb;
 
+  /* Suaviza o deslizamento */
+  scroll-behavior: smooth;
+
 }
 
 

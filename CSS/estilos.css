@@ -39,6 +39,10 @@ body {
 
     /* Cor de fundo */
     background: #a19286bb;
+
+    /* Suaviza o deslizamento */
+    scroll-behavior: smooth;
+
 }
 
 

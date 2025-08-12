@@ -3,34 +3,33 @@
 ==================================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* Remove sublinhado dos links e define cor preta */
+
+/* ====================================
+     Reset e estilos base para links
+==================================== */
 a {
     text-decoration: none;
 
     color: #000000;
-
 }
 
 
-/* ====================================
-                  BODY
-==================================== */
+/* Estilo geral do body */
 body {
-    /* Evita rolagem horizontal */
+    /* Remove rolagem horizontal */
     overflow-x: hidden;
 
-    /* Remove margens padrão */
+    /* Remove margem padrão */
     margin: 0;
 
-    /* Define fonte */
+    /* Aplica a fonte Poppins */
     font-family: 'Poppins', sans-serif;
 
-    /* Define cor de fundo translúcida */
+    /* Cor de fundo */
     background: #a19286bb;
 
     /* Suaviza o deslizamento */
     scroll-behavior: smooth;
-
 }
 
 
@@ -38,33 +37,27 @@ body {
         Header (topo do site)
 ==================================== */
 .header {
-    /* Flexbox para layout horizontal */
     display: flex;
 
-    /* Espaça itens */
+    /* Espaço entre logo e menu */
     justify-content: space-between;
 
-    /* Centraliza verticalmente */
+    /* Alinha os itens */
     align-items: center;
 
-    /* Espaçamento interno */
     padding: 1rem 2rem;
 
     background-color: #9a5833;
 
-    /* Posicionamento relativo para futuros posicionamentos absolutos */
     position: relative;
-
 }
 
-/* ====================================
-                  LOGO
-==================================== */
+
+/* Logo no topo */
 .logo {
-
     width: 11%;
-
 }
+
 
 /* ====================================
             Navegação (menu)
@@ -124,86 +117,67 @@ body {
     color: #000000;
 }
 
+/* ====================================
+                Pedidos
+==================================== */
+.pedidos{
+    width: 60%;
 
-.contatos{
-    margin-left: 20%;
-}
+    margin: 0 auto;
 
-.subtitulo{
-    margin-left: 20%;
-}
-
-/*Formulário*/
-form{
-	margin-top: 20px;
-	margin-left: 20%;
-    margin-bottom: 0;
-}
-form label, form legend{
-	display: block;
-	font-size: 20px;
-	margin: 0 0 10px;
-}
-fieldset{
-	width: 75%;
-	padding-left: 5%;
-	margin-bottom: 2%;
-}
-.input-padrao{
-	display: block;
-	margin: 0 0 20px;
-	padding: 10px 25px;
-	width: 85%;
-}
-.chk{
-	margin: 20px 0;
-}
-.enviar{
-    margin-left: 24%;
-	width: 27%;
-	padding: 15px 0;
-    margin-bottom: 25px;
-	background: #9a5833;
-	color: white;
-	font-weight: bold;
-	border: none;
-	border-radius: 5px;
-	transition: 1s all;
-	cursor: pointer;
-}
-.enviar:hover{
-	background: #9a5833;
-	transform: scale(1.06);
+    text-align: justify;
 }
 
-/*Div do retorno do formulário*/
-.divRetorno{
-    display: none;
-    margin-bottom: 15px;
-}
-.divRetorno p{
-    font-size: 24px;
+/* Título da seção */
+.titulo_pedidos {
+    text-align: center;
+
+    clear: left;
 }
 
-.inputs {
-    border-radius: 5.5px;
-    border: none;
+.subtitulo_pedidos{
+
+    text-align: center;
+
+    clear: left;
+    
+}
+
+/* Tabela de encomendas */
+table{
+    width: 100%;
+
+    margin-bottom: 2%;
+
+    table-layout: fixed;
+
+}
+
+/* Colunas e titulos */
+td,th{
+
     padding: 10px;
+
+    margin: 0%;
+
+    border: 2px black;
+
+    text-align: center;
+
 }
 
-/*============================
-            FOOTER
-=============================*/
-.logo_footer {
+th{
 
-    width: 11%;
-  
-    margin-left: 45%;
-  
-    margin-top: 30px;
-  
-  }
+    font-weight: bold;
 
+    background-color: #9a5833;
+
+}
+
+
+/* ====================================
+            Rodapé (footer)
+==================================== */
 
 footer {
 
@@ -236,7 +210,19 @@ footer {
   
     margin-bottom: 0;
   
+  }
+
+
+/* Logo no rodapé */
+.logo_footer {
+    width: 11%;
+
+    margin-left: 45%;
+
+    margin-top: 30px;
 }
+
+
 
 /* Ícones de redes sociais */
 i {
@@ -248,49 +234,41 @@ footer a {
     color: white;
 }
 
-  
+
 /* ====================================
    Scrollbar personalizada (WebKit)
 ==================================== */
 
 /* Largura e altura da barra */
 ::-webkit-scrollbar {
-
     width: 12px;
-  
+
     height: 12px;
-  
-  }
-  
-  
-  /* Trilha (fundo da barra) */
-  ::-webkit-scrollbar-track {
-  
-    background: transparent;
-  
-  }
-  
-  
-  /* Polegar (a parte que se move) */
-  ::-webkit-scrollbar-thumb {
-  
-    background-color: #9a5833;
-  
-    border-radius: 100px;
-  
-    height: 20px;
-  
-    width: 20px;
-  
-    transition: all 0.3s ease;
-  
 }
-  
+
+
+/* Trilha (fundo da barra) */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Polegar (a parte que se move) */
+::-webkit-scrollbar-thumb {
+    background-color: #9a5833;
+
+    border-radius: 100px;
+
+    height: 20px;
+
+    width: 20px;
+
+    transition: all 0.3s ease;
+}
+
 /* Efeito hover na barra */
 ::-webkit-scrollbar-thumb:hover {
-  
     background-color: #b76a3c;
-  
+
     transform: scale(1.4);
-  
 }
