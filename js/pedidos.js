@@ -1,0 +1,1 @@
+document.querySelector(".total").textContent = document.querySelector(".qtd").textContent * document.querySelector(".unitario").textContent
