@@ -13,5 +13,16 @@ for(var count=0; count<clientes.length; count++){
     var unitario = clientes[count].querySelector(".unitario").textContent;
 
     // Exibe o total
-    clientes[count].querySelector(".total").textContent = qtd * unitario;
+    clientes[count].querySelector(".total").textContent = calcula_total(qtd,unitario);
+
+}
+
+//Função de calculo do valor total
+function calcula_total(qtd,unit){
+    
+    var total = 0;
+
+    total = qtd * unit;
+
+    return total;
 }
