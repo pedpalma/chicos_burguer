@@ -12,8 +12,30 @@ for(var count=0; count<clientes.length; count++){
     // Valor de cada encomenda
     var unitario = clientes[count].querySelector(".unitario").textContent;
 
-    // Exibe o total
-    clientes[count].querySelector(".total").textContent = calcula_total(qtd,unitario);
+    // Verifica se a qtd é valida
+    if(qtd < 1 || isNaN(qtd)){
+
+        //A qtd é menor que 1 ou NaN
+        clientes[count].querySelector(".qtd").textContent = "Quantidade Inválida!";
+
+        // Deixa o texto qtd em vermelho
+        // clientes[count].querySelector(".qtd").style.color = "red";
+
+        // Linha toda com texto em vermelho
+        //clientes[count].style.color = "red";
+
+        // Linha toda vermelha e texto em branco
+        clientes[count].style.backgroundColor = "red";
+        clientes[count].style.color = "white";
+
+
+
+    }else{
+
+        // Exibe o total
+        clientes[count].querySelector(".total").textContent = calcula_total(qtd,unitario);
+
+    }
 
 }
 
