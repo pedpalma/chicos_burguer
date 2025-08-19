@@ -47,6 +47,10 @@ for (var count = 0; count < clientes.length; count++) {
             // Exibe o total
             clientes[count].querySelector(".total").textContent = calcula_total(qtd, unitario);
 
+            // Envia a formatação  para o valor uni
+            clientes[count].querySelector(".unitario").textContent =formata_valor(parseFloat(unitario));
+
+
         }
 
     }
@@ -66,10 +70,10 @@ function calcula_total(qtd, unit) {
 
 
 // Função de formatação para R$
-function formata_valor(valor){
+function formata_valor(valor) {
 
-    var valor_format = valor.toLocaleString("pt-BR", {style: 'currency', currency: 'BRL'});
-    
+    var valor_format = valor.toLocaleString("pt-BR", { style: 'currency', currency: 'BRL' });
+
     return valor_format;
 
 }
