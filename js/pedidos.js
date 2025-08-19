@@ -61,5 +61,15 @@ function calcula_total(qtd, unit) {
 
     total = qtd * unit;
 
-    return total;
+    return formata_valor(total);
+}
+
+
+// Função de formatação para R$
+function formata_valor(valor){
+
+    var valor_format = valor.toLocaleString("pt-BR", {style: 'currency', currency: 'BRL'});
+    
+    return valor_format;
+
 }
