@@ -25,9 +25,8 @@ for (var count = 0; count < clientes.length; count++) {
         //clientes[count].style.color = "red";
 
         // Linha toda vermelha e texto em branco
-        clientes[count].style.backgroundColor = "red";
+        clientes[count].classList.add("qtd_invalida");
 
-        clientes[count].style.color = "white";
 
     } else {
 
@@ -38,9 +37,7 @@ for (var count = 0; count < clientes.length; count++) {
             clientes[count].querySelector(".unitario").textContent = "Valor incorreto";
 
             // Linha toda vermelha e texto em branco
-            clientes[count].style.backgroundColor = "red";
-
-            clientes[count].style.color = "white";
+            clientes[count].classList.add("uni_invalido");
 
         } else {
 

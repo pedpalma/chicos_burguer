@@ -123,7 +123,7 @@
                         <td class="nome">Sinistro</td>
                         <td class="produto">Chico's Cebola Cabulosa</td>
                         <td class="qtd">1</td>
-                        <td class="unitario">20</td>
+                        <td class="unitario">a20</td>
                         <td class="total"></td>
 
                     </tr>
@@ -134,7 +134,7 @@
                         <td class="nome">Planeta Kaique</td>
                         <td class="produto">Chicos Frango Brabo</td>
                         <td class="qtd">1a</td>
-                        <td class="unitario">40a</td>
+                        <td class="unitario">40</td>
                         <td class="total"></td>
 
                     </tr>
@@ -155,6 +155,87 @@
             </table>
 
         </section>
+
+        <div class="subtitulo_criar_pedido">
+
+            <p>
+                <strong>Faça o seu pedido aqui!</strong>
+
+            </p>
+
+        </div>
+
+
+        <section class="form_pedido">
+
+            <form>
+
+                    <div class="bloco">
+
+                        <div class="bloco_nome">
+
+                            <label>Nome: </label>
+
+                            <input type="text" required placeholder="Digite seu nome">
+
+                        </div>
+
+                        <div class="bloco_qtd">
+
+                            <label>Quantidade de encomendas: </label>
+
+                            <input type="number" required placeholder="Selecione a quantidade">
+
+                        </div>
+
+                        <div class="bloco_produto">
+
+                            <label>Produto:</label>
+
+                            <select>
+
+                                    <option>Selecione</option>
+
+                                    <option>Clássico Chico Smash Burger</option>
+
+                                    <option>Chico's Bacon Churrasco</option>
+
+                                    <option>Chico's Salada Master</option>
+
+                                    <option>Chico's Australiano</option>
+
+                                    <option>Chico's Frango Brabo</option>
+
+                                    <option>Chico's Master Fish</option>
+
+                                    <option>Chico's Cebola Cabulosa</option>
+
+                                    <option>Chico's Batata Bolada</option>
+
+                                    <option>Chico's Dadinhos Maldosos</option>
+
+                                </select>
+
+
+                        </div>
+
+                        <div class="bloco_unitario">
+
+                            <label>Valor Unitário</label>
+                            
+                            <input type="text" name="" required placeholder="Digite o Valor">
+
+                        </div>
+
+                    </div>  
+
+                        <button class="bt" id="adicionar">Adicionar</button>
+
+                        
+
+            </form>
+         
+        </section>    
 
     </main>
     <!-- ============================
@@ -178,6 +259,7 @@
      ============================= -->
 
     <script src="js/pedidos.js"></script>
+    <script src="js/adicionar_encomenda.js"></script>
 
 </body>
 
