@@ -93,7 +93,7 @@
                 </thead>
 
                 <!-- Corpo da tabela -->
-                <tbody id="tabela_clientes">
+                <tbody id="tabela-clientes">
 
                     <!-- 1° linha -->
                     <tr class="cliente">
@@ -168,7 +168,7 @@
 
         <section class="form_pedido">
 
-            <form>
+            <form id="adiciona">
 
                     <div class="bloco">
 
@@ -176,7 +176,7 @@
 
                             <label>Nome: </label>
 
-                            <input type="text" required placeholder="Digite seu nome">
+                            <input name="nome" id="nome" type="text" required placeholder="Digite seu nome">
 
                         </div>
 
@@ -184,7 +184,7 @@
 
                             <label>Quantidade de encomendas: </label>
 
-                            <input type="number" required placeholder="Selecione a quantidade">
+                            <input name="qtd" type="number" required placeholder="Selecione a quantidade">
 
                         </div>
 
@@ -192,7 +192,7 @@
 
                             <label>Produto:</label>
 
-                            <select>
+                            <select name="produto">
 
                                     <option>Selecione</option>
 
@@ -223,7 +223,7 @@
 
                             <label>Valor Unitário</label>
                             
-                            <input type="text" name="" required placeholder="Digite o Valor">
+                            <input type="text" name="unitario" required placeholder="Digite o Valor">
 
                         </div>
 
