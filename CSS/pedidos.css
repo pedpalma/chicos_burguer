@@ -143,7 +143,22 @@ body {
     
 }
 
-/* Tabela de encomendas */
+/* ====================================
+                Filtro
+==================================== */
+.filtar_tabela{
+    width: 8.5%;
+    margin-bottom: 1%;
+}
+
+.buscar{
+    margin-left: 8.3%;
+}
+
+
+/* ====================================
+        Tabela de encomendas
+==================================== */
 table{
     width: 100%;
 
@@ -272,6 +287,18 @@ input, select{
     border: none;
 
 }
+
+/* Efeito para sumir a linha apagada */
+.fadeOut{
+    opacity: 0;
+    transition: 1s;
+}
+
+/* Esconde a linha  */
+.invisivel{
+    display: none;
+}
+
 
 /* ====================================
             Rodapé (footer)
