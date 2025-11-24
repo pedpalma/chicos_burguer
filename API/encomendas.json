@@ -2,20 +2,20 @@
     "encomendas_web":[
         {"nome": "Nojeira",
         "produto": "Bolo de Bago Masculino",
-        "Quantidade" : 3,
-        "Valor_uni" : 50,
-        "Total": 0},
+        "qtd" : 3,
+        "unitario" : 50,
+        "total": 0},
 
         {"nome": "Biscate",
         "produto": "Bolo de cara-melada",
-        "Quantidade" : 2,
-        "Valor_uni" : 35,
-        "Total": 0},
+        "qtd" : 2,
+        "unitario" : 35,
+        "total": 0},
 
         {"nome": "luisa Eemepe",
         "produto": "Bolo de requeilão",
-        "Quantidade" : 1,
-        "Valor_uni" : 69,
-        "Total": 0}
+        "qtd" : 1,
+        "unitario" : 69,
+        "total": 0}
     ]
 }
