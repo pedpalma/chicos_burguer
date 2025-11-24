@@ -277,6 +277,10 @@ form label, form legend{
 
 }
 
+.bt-api{
+    margin-left: 5%;
+}
+
 /* caixa */
 input, select{
 
