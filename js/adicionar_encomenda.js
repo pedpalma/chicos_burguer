@@ -16,13 +16,21 @@ botaoAdicionar.addEventListener("click", function (event) {
 // Captura de dados do formulário
 function obtemEncomenda(formulario) {
     var encomenda = {
-        nome: formulario.nome.value,
-        qtd: formulario.qtd.value,
-        produto: formulario.produto.value,
-        unitario: formulario.unitario.value
+        nome: formulario.nome,
+        qtd: formulario.qtd,
+        produto: formulario.produto,
+        unitario: formulario.unitario
     }
 
     return encomenda;
+}
+
+// Função para adicionar nova encomenda na tabela
+function adicionaEncomenda(dadosEncomenda) {
+    // Captura a tavele de encomendas
+    var tabela = document.querySelector("#tabela-clientes");
+    // Insere a nova encomenda na tabela
+    tabela.appendChild(montaTr(dadosEncomenda))
 }
 
 // Função para criar nova linha
