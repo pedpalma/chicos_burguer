@@ -37,8 +37,8 @@ function adicionaEncomenda(dadosEncomenda) {
 function montaTr(dadosNovaEncomenda) {
     var linha = document.createElement("tr");
     linha.appendChild(montaTd(dadosNovaEncomenda.nome));
-    linha.appendChild(montaTd(dadosNovaEncomenda.qtd));
     linha.appendChild(montaTd(dadosNovaEncomenda.produto));
+    linha.appendChild(montaTd(dadosNovaEncomenda.qtd));
     linha.appendChild(montaTd(formata_valor(dadosNovaEncomenda.unitario)));
     linha.appendChild(montaTd(calcula_total(dadosNovaEncomenda.qtd,dadosNovaEncomenda.unitario)));
 
